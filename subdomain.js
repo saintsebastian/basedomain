@@ -49,7 +49,6 @@ function subdomainFromList(string) {
             }
             const matches = string.match(suffixRegex);
             if (matches) {
-              // console.log(matches, suffixRegex);
               for (let i = list.length - 1; i >= 0; i--) {
                 const checkDouble = new RegExp('^' + suffix + '$');
                 if (list[i].match(checkDouble))
